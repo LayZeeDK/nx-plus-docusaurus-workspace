@@ -14,7 +14,6 @@ module.exports = {
       // Plugin / TypeDoc options
       {
         entryPoints: ['./libs/angular-lib/src/index.ts'],
-        // out: 'api', // default value
         tsconfig: './libs/angular-lib/tsconfig.lib.json',
       },
     ],
