@@ -1,0 +1,1 @@
+(self.webpackChunknx_plus_docusaurus_workspace=self.webpackChunknx_plus_docusaurus_workspace||[]).push([[363],{5506:s=>{"use strict";s.exports=JSON.parse('{"allTagsPath":"/nx-plus-docusaurus-workspace/blog/tags","slug":"hola","name":"hola","count":1,"permalink":"/nx-plus-docusaurus-workspace/blog/tags/hola"}')}}]);
