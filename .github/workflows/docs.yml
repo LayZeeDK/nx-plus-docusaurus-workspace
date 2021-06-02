@@ -19,6 +19,7 @@ jobs:
         with:
           node-version: 14.x
       - run: npm install --global pnpm@6.x
+      - run: pnpm install
 
       - name: Build
         run: pnpm build
