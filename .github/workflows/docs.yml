@@ -1,0 +1,48 @@
+name: Documentation CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request: {}
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+      - run: npm install --global pnpm@6.x
+
+      - name: Build
+        run: pnpm build
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: angular-lib-docs
+          path: dist/apps/angular-lib-docs
+          if-no-files-found: error
+
+  deploy:
+    name: Deploy to GitHub Pages
+    if: ${{ github.ref == 'refs/heads/main' && (github.event_name == 'workflow_dispatch' || github.event_name == 'push') }}
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: angular-lib-docs
+          path: ./angular-lib-docs/
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.3
+        with:
+          branch: gh-pages
+          folder: ./angular-lib-docs/

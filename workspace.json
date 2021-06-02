@@ -24,9 +24,7 @@
       "targets": {
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/angular-lib"
-          ],
+          "outputs": ["coverage/libs/angular-lib"],
           "options": {
             "jestConfig": "libs/angular-lib/jest.config.js",
             "passWithNoTests": true
@@ -63,5 +61,5 @@
       }
     }
   },
-  "defaultProject": "angular-lib"
+  "defaultProject": "angular-lib-docs"
 }
