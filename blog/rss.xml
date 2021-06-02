@@ -4,9 +4,16 @@
         <title>My Site Blog</title>
         <link>https://layzeedk.github.io/blog</link>
         <description>My Site Blog</description>
-        <lastBuildDate>Thu, 30 May 2019 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 02 Jun 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Nx rocks!]]></title>
+            <link>https://layzeedk.github.io/nx-plus-docusaurus-workspace/blog/nx-rocks</link>
+            <guid>nx-rocks</guid>
+            <pubDate>Wed, 02 Jun 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Using Nx + Docusaurus + TypeDoc + GitHub Pages for the win!]]></description>
+        </item>
         <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://layzeedk.github.io/nx-plus-docusaurus-workspace/blog/welcome</link>

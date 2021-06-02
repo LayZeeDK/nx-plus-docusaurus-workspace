@@ -1,0 +1,1 @@
+(self.webpackChunknx_plus_docusaurus_workspace=self.webpackChunknx_plus_docusaurus_workspace||[]).push([[280],{7581:s=>{"use strict";s.exports=JSON.parse('{"permalink":"/nx-plus-docusaurus-workspace/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
