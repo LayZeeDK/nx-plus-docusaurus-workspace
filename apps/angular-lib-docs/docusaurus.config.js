@@ -2,7 +2,7 @@ module.exports = {
   title: 'My Site',
   tagline: 'The tagline of my site',
   url: 'https://layzeedk.github.io',
-  baseUrl: 'nx-plus-docusaurus-workspace',
+  baseUrl: '/nx-plus-docusaurus-workspace/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
