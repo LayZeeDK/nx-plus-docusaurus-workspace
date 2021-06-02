@@ -1,10 +1,48 @@
 {
-  
-  
   "version": 2,
-  
-  "projects": {},
   "cli": {
-    "defaultCollection": "@nrwl/workspace"
-  }
+    "defaultCollection": "@nrwl/angular"
+  },
+  "generators": {
+    "@nrwl/angular:application": {
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
+    },
+    "@nrwl/angular:library": {
+      "linter": "eslint",
+      "unitTestRunner": "jest"
+    },
+    "@nrwl/angular:component": {}
+  },
+  "projects": {
+    "angular-lib": {
+      "projectType": "library",
+      "root": "libs/angular-lib",
+      "sourceRoot": "libs/angular-lib/src",
+      "prefix": "docs",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/angular-lib"
+          ],
+          "options": {
+            "jestConfig": "libs/angular-lib/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/angular-lib/src/**/*.ts",
+              "libs/angular-lib/src/**/*.html"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "angular-lib"
 }
