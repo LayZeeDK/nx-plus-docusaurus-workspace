@@ -21,6 +21,9 @@
   "projects": {
     "angular-lib": {
       "tags": []
+    },
+    "angular-lib-docs": {
+      "tags": []
     }
   }
 }
