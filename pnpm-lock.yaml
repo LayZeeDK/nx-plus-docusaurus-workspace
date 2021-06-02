@@ -23,6 +23,7 @@ specifiers:
   '@nrwl/linter': 12.3.5
   '@nrwl/tao': 12.3.5
   '@nrwl/workspace': 12.3.5
+  '@nx-plus/docusaurus': ^12.0.0
   '@types/jest': 26.0.8
   '@types/node': 14.14.33
   '@typescript-eslint/eslint-plugin': 4.19.0
@@ -69,6 +70,7 @@ devDependencies:
   '@nrwl/linter': 12.3.5
   '@nrwl/tao': 12.3.5
   '@nrwl/workspace': 12.3.5_prettier@2.2.1
+  '@nx-plus/docusaurus': 12.0.0_@nrwl+workspace@12.3.5
   '@types/jest': 26.0.8
   '@types/node': 14.14.33
   '@typescript-eslint/eslint-plugin': 4.19.0_f2ad7386ef3401c53424c22cc09210d8
@@ -254,6 +256,15 @@ packages:
       rxjs: 6.6.7
       source-map: 0.7.3
     dev: false
+
+  /@angular-devkit/schematics/12.0.0:
+    resolution: {integrity: sha512-xp6b8QF+MYT3kXEDo6MFRQRDGkFxAHBdBCo2wdo8qvoNHIr+8XYZwDEb8z0SbzzJmXFbDXk1vmavcNSd6+uLXg==}
+    engines: {node: ^12.14.1 || ^14.0.0, npm: ^6.11.0 || ^7.5.6, yarn: '>= 1.13.0'}
+    dependencies:
+      '@angular-devkit/core': 12.0.0
+      ora: 5.4.0
+      rxjs: 6.6.7
+    dev: true
 
   /@angular-devkit/schematics/12.0.2:
     resolution: {integrity: sha512-PS+SrRhAc/lyRfuBsi6Rt2yV7IA34B7T6J0K8/Av0GABZ83x+0vLiZC39eSPS1X8qcM/U09pCfDT8Q6ZQPCICA==}
@@ -2801,6 +2812,19 @@ packages:
       tslib: 2.2.0
       yargs: 15.4.1
       yargs-parser: 20.0.0
+
+  /@nx-plus/docusaurus/12.0.0_@nrwl+workspace@12.3.5:
+    resolution: {integrity: sha512-MQg1rlN1lAWrKfMZEKslYbZCiZuINAxWkS8jSLPZWauolYEyZVTKAP7Z+90tHAYx9ORDhI2sSC9zJCKdcAXYzQ==}
+    peerDependencies:
+      '@nrwl/workspace': ^12.0.0
+    dependencies:
+      '@angular-devkit/architect': 0.1200.0
+      '@angular-devkit/core': 12.0.0
+      '@angular-devkit/schematics': 12.0.0
+      '@nrwl/workspace': 12.3.5_prettier@2.2.1
+      rxjs: 6.5.5
+      typescript: 4.1.4
+    dev: true
 
   /@samverschueren/stream-to-observable/0.3.1_rxjs@6.6.7:
     resolution: {integrity: sha512-c/qwwcHyafOQuVQJj0IlBjf5yYgBI7YPJ77k4fOJYesb41jio65eaJODRUmfYKhTOFBrIZ66kgvGPlNbjuoRdQ==}
@@ -9618,6 +9642,13 @@ packages:
     dependencies:
       rxjs: 6.6.7
 
+  /rxjs/6.5.5:
+    resolution: {integrity: sha512-WfQI+1gohdf0Dai/Bbmk5L5ItH5tYqm3ki2c5GdWhKjalzjg93N3avFjVStyZZz+A2Em+ZxKH5bNghw9UeylGQ==}
+    engines: {npm: '>=2.0.0'}
+    dependencies:
+      tslib: 1.14.1
+    dev: true
+
   /rxjs/6.6.7:
     resolution: {integrity: sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ==}
     engines: {npm: '>=2.0.0'}
@@ -10669,6 +10700,12 @@ packages:
     resolution: {integrity: sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==}
     dependencies:
       is-typedarray: 1.0.0
+    dev: true
+
+  /typescript/4.1.4:
+    resolution: {integrity: sha512-+Uru0t8qIRgjuCpiSPpfGuhHecMllk5Zsazj5LZvVsEStEjmIRRBZe+jHjGQvsgS7M1wONy2PQXd67EMyV6acg==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
     dev: true
 
   /typescript/4.2.4:
